@@ -7,12 +7,8 @@ __pycache__/
 .Python
 build/
 dataset/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
 files/
+odir_env/
 lib/
 lib64/
 parts/
@@ -20,9 +16,6 @@ sdist/
 var/
 wheels/
 share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 MANIFEST
 
 # PyInstaller
