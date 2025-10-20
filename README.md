@@ -5,18 +5,30 @@ Software para el análisis de Reconocimiento de enfermedades oculares con una ba
 ## Estructura del proyecto
 
 odir_final/ 
+
 ├── main.py # Menú interactivo principal 
+
 ├── config.py # Rutas y constantes globales 
+
 ├── modules/ 
+
 │ ├── manager/ 
+
 │ │ └── image_manager.py # Clase principal de gestión 
+
 │ ├── models/ 
+
 │ │ ├── paciente.py # Clase para ID automático 
+
 │ │ ├── diagnostico.py # Codificación multiclase 
+
 │ │ └── imagen.py # Carga local de imágenes 
 │ ├── utils/ 
+
 │ │ ├── io.py # Carga y guardado de CSV 
+
 │ │ └── validation.py # Validación de extensiones
+
 
 ---
 
@@ -46,12 +58,12 @@ Ejecuta el menú principal:
 
 
 ## Flujo de trabajo
-Registro: Carga dos imágenes (izquierda y derecha) desde tu sistema local, asigna ID automático, codifica diagnóstico y guarda en CSV.
-Modificación: Edita campos como edad, sexo o diagnóstico por ID.
-Eliminación: Borra imágenes físicas y registros asociados.
-Visualización: Muestra metadatos y la imagen con matplotlib.
+- Registro: Carga dos imágenes (izquierda y derecha) desde tu sistema local, asigna ID automático, codifica diagnóstico y guarda en CSV.
+- Modificación: Edita campos como edad, sexo o diagnóstico por ID.
+- Eliminación: Borra imágenes físicas y registros asociados.
+- Visualización: Muestra metadatos y la imagen con matplotlib.
 
 ## Notas importantes
-Las imágenes deben estar en formato .jpg.
-El sistema no depende de Google Colab.
-Las rutas están definidas en config.py y pueden adaptarse a tu sistema operativo.
+- Las imágenes deben estar en formato .jpg.
+- El sistema no depende de Google Colab.
+- Las rutas están definidas en config.py.
